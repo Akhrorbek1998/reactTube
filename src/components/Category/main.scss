@@ -1,0 +1,77 @@
+.category-block::-webkit-scrollbar {
+    width: 0;
+    height: 3px;
+}
+
+  /* Track */
+.category-block::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+  /* Handle */
+.category-block::-webkit-scrollbar-thumb {
+    background: gold; 
+    border-radius: 4px;
+    
+}
+
+  /* Handle on hover */
+.category-block::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+
+.category-block {
+    padding: 4px 2px;
+}
+
+.category-btn {
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 19px;
+    justify-content: start;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 7px 17px;
+    text-transform: capitalize;
+    transition: all 0.4s ease;
+    border: none;
+    outline: none;
+
+    .category-btn-name {
+        margin-left: 12px;
+    }
+
+    &:hover {
+        background-color: gold !important;
+        color: #222;
+
+        span {
+            color: #222;
+        }
+    }
+
+    span {
+        color: crimson;
+    }
+
+    .category-btn-name {
+        display: block;
+        color: #014;
+        margin-left: 12px;
+    }
+
+}
+
+.active {
+    background-color: indigo;
+    span {
+        color: gold;
+    }
+    .category-btn-name {
+        color: gold;
+    }
+}
